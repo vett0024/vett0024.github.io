@@ -1,0 +1,41 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+header,footer {
+    background-color: beige;
+}
+
+.site-title {
+    color: brown;
+}
+
+#my-image {
+    box-shadow: 0px 0px 2px 1px gray;
+}
+
+section ul {
+    list-style: square;
+}
+
+section ul li:nth-child(odd) {
+    background-color: lightgray;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    background-color: #ddd; 
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 2px;
+}
+
+a:hover,a:focus {
+    background-color: coral; 
+}
