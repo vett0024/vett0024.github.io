@@ -416,6 +416,6 @@ footer a {
 
 @media (max-width: 760px) {
     .services-grid {
-        flex-direction: column;
+        flex-direction: column;    /*media for the services */
     }
 }
