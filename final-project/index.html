@@ -4,153 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mock HTML</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div>
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <img src="images/logo.png" alt="Star logo">
+    <div id="container">
+        <header id="header">
+            <nav id="navbar">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <img src="images/logo.png" alt="Star logo" id="logo">
                     </li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li>
-                        <input type="text" placeholder="Search" name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="aboutus.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="team.html" class="nav-link">Team</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item">
+                        <input type="text" placeholder="Search" name="search" id="search-bar">
+                        <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
                     </li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <section>
-                <img src="images/main-banner.jpg" alt="banner">
-                <div>
+        <main id="main-content">
+            <section id="hero-section">
+                <img src="images/main-banner.jpg" alt="banner" id="main-banner">
+                <div id="hero-text">
                     <h1>Welcome to Three Star Media</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining.</p>
-                    <a href="#">Connect with Us</a>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a href="#" class="cta-button">Connect with Us</a>
                 </div>
             </section>
-            <section>
-                <img src="images/about-us.jpg" alt="about-us">
-                <div>
+            <section id="about-section">
+                <img src="images/about-us.jpg" alt="about-us" class="section-image">
+                <div class="section-text">
                     <h2>About Us</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining.</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                 </div>
             </section>
-            <section>
-                <div>
-                    <h2>Our Services</h2>
-                </div>
-                <div>
-                    <img src="images/digital.jpg" alt="digital transformation">
-                    <h3>Digital Transformation</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining.</p>
-                    <a href="#">Digital Plans</a>
-                </div>
-            </section>
-            <section>
-                <div>
-                    <img src="images/marketing.jpg" alt="Marketing">
-                    <h3>Marketing</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining.</p>
-                    <a href="#">Marketing Plans</a>
-                </div>
-            </section>
-            <section>
-                <div>
-                    <img src="images/video.jpg" alt="Video">
-                    <h3>Video Production</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining.</p>
-                    <a href="#">Video Plans</a>
-                </div>
-            </section>
-            <section>
-                <div>
-                    <img src="images/web.jpg" alt="Web Dev">
-                    <h3>Web Development</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining.</p>
-                    <a href="#">Web Plans</a>
-                </div>
-            </section>
-            <section>
-                <div>
-                    <img src="images/print.jpg" alt="Print">
-                    <h3>Print</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining.</p>
-                    <a href="#">Print Plans</a>
+            <section id="services-section">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <img src="images/digital.jpg" alt="digital transformation" class="service-image">
+                        <h3>Digital Transformation</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="#" class="service-link">Digital Plans</a>
+                    </div>
+                    <div class="service-item">
+                        <img src="images/marketing.jpg" alt="Marketing" class="service-image">
+                        <h3>Marketing</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="#" class="service-link">Marketing Plans</a>
+                    </div>
+                    <div class="service-item">
+                        <img src="images/video.jpg" alt="Video" class="service-image">
+                        <h3>Video Production</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="#" class="service-link">Video Plans</a>
+                    </div>
+                    <div class="service-item">
+                        <img src="images/web.jpg" alt="Web Dev" class="service-image">
+                        <h3>Web Development</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="#" class="service-link">Web Plans</a>
+                    </div>
+                    <div class="service-item">
+                        <img src="images/print.jpg" alt="Print" class="service-image">
+                        <h3>Print</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="#" class="service-link">Print Plans</a>
+                    </div>
+                    <div class="service-item">
+                        <img src="images/vision.jpg" alt="Our Vision" class="service-image">
+                        <h3>Our Vision</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="#" class="service-link">Learn More</a>
+                    </div>
                 </div>
             </section>
-            <section>
-                <div>
-                    <img src="images/vision.jpg" alt="Our Vision">
-                    <h3>Our Vision</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining.</p>
-                    <a href="#">Learn More</a>
-                </div>
-            </section>
-            <section>
-                <div>
-                    <h2>Our Team</h2>
-                </div>
-                <div>
-                    <img src="images/john.jpg" alt="John Doe">
-                </div>
-                <div>
+            <section id="team-section">
+                <h2>Our Team</h2>
+                <div class="team-member">
+                    <img src="images/john.jpg" alt="John Doe" class="team-image">
                     <h3>John Doe</h3>
                     <h4>CEO and Co-owner</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
-                <div>
+                <div class="team-member">
+                    <img src="images/bob.jpg" alt="Bob Rite" class="team-image">
                     <h3>Bob Rite</h3>
                     <h4>CFO and Co-owner</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining.</p>
-                </div>
-                <div>
-                    <img src="images/bob.jpg" alt="Bob Rite">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
             </section>
-            <section>
+            <section id="contact-section">
                 <h2>Contact Us</h2>
-                <div>
+                <div id="contact-form">
                     <h3>Send us a message</h3>
                     <form action="#" method="post">
-                        <div>
+                        <div class="form-group">
                             <label for="fullname">Full Name</label>
                             <input type="text" id="fullname" name="fullname" required>
                         </div>
-                        <div>
+                        <div class="form-group">
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" required>
                         </div>
-                        <div>
+                        <div class="form-group">
                             <label for="message">Message</label>
                             <textarea id="message" name="message" rows="4" required></textarea>
                         </div>
-                        <button type="submit">Send</button>
+                        <button type="submit" class="form-button">Send</button>
                     </form>
                 </div>
-                <div>
+                <div id="location">
                     <h3>Location</h3>
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5606.79611609207!2d-75.79342178815196!3d45.36096197095188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce01289bfa2545%3A0x8ac0deae0e670fa2!2s812%20Dundee%20Ave%2C%20Ottawa%2C%20ON%20K2B%205S9!5e0!3m2!1sen!2sca!4v1712298635750!5m2!1sen!2sca" 
-                        width="600" 
-                        height="450" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5606.79611609207!2d-75.79342178815196!3d45.36096197095188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce01289bfa2545%3A0x8ac0deae0e670fa2!2s812%20Dundee%20Ave%2C%20Ottawa%2C%20ON%20K2B%205S9!5e0!3m2!1sen!2sca!4v1712298635750!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-            </section>
-            <section>
-                <div>
+                <section id="hours-section">
+                <div id="hours">
                     <h2>Hours of Operation</h2>
-                    <table>
+                    <table id="hours-table">
                         <thead>
                             <tr>
                                 <th>Days</th>
@@ -169,9 +145,10 @@
                         </tbody>
                     </table>
                 </div>
+                </section>
             </section>
         </main>
-        <footer>
+        <footer id="footer">
             <p>&copy; Copyright Three Star Media, 2020</p>
             <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
         </footer>
