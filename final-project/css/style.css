@@ -272,7 +272,7 @@ h2 {
 
 #team-section {
     background-color: #ffd966;
-    padding: 20px;
+    padding: 20px; /* Added padding for better spacing */
 }
 
 .team-member {
@@ -282,11 +282,11 @@ h2 {
 }
 
 .team-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 200px;
+    height: 200px;
     margin-right: 20px;
     object-fit: cover;
+    flex-shrink: 0; /* Ensures the image doesn't shrink */
 }
 
 .team-member h3 {
@@ -300,6 +300,7 @@ h2 {
     font-size: 1.2em;
     color: #333;
 }
+
 
 #contact-section {
     padding: 20px;
@@ -347,13 +348,15 @@ h2 {
 }
 
 #location iframe {
+    display: flex;
+    margin-top: 100px;
     width: 50%;
     border: none;
-    height: 300px;
+    height: 400px;
 }
 
 #hours-section {
-    margin-top: 200px;
+    margin-top: 100px;
     margin-right: 200px;
     columns: 1;
     justify-content: center;
@@ -392,6 +395,6 @@ footer a {
     text-decoration: none;
 }
 
-footer a:hover {
+#foot-under {
     text-decoration: underline;
 }
